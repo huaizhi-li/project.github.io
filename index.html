@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商城页面</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    .green-points {
+        border: 1px solid green;
+        padding: 10px;
+        width: 100px;
+        margin: 20px;
+        text-align: center;
+  }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container3">
+        <div class="top3">
+            <span class="category-label">废旧电池置换交易平台</span>
+        </div>
+</header>
+<main>
+    <div class="green-points">
+        绿色积分：<span id="points">0</span>
+      </div>
+    <div class="container4">
+        <div class="sort">
+            <div id="product-list">
+                <div class="product" data-id="1" >
+                    <img src="image/48V20AH锂电池.jpg" alt="48V20AH锂电池">
+                    <h2>48V20AH锂电池</h2>
+                    <button onclick="addPoints('48V20AH锂电池', '回收')">回收</button>
+                    <button onclick="addPoints('48V20AH锂电池', '出售')">出售</button>
+                </div>
+                <div class="product" data-id="2" >
+                    <img src="image/三元锂电池.jpg" alt="三元锂电池">
+                    <h2>三元锂电池</h2>
+                    <button onclick="addPoints('48V20AH锂电池', '回收')">回收</button>
+                    <button onclick="addPoints('48V20AH锂电池', '出售')">出售</button>
+                </div>
+                <div class="product" data-id="3" >
+                    <img src="image/铅酸.jpg" alt="锂电池">
+                    <h2>12V20AH铅酸蓄电池</h2>
+                    <button onclick="addPoints('48V20AH锂电池', '回收')">回收</button>
+                    <button onclick="addPoints('48V20AH锂电池', '出售')">出售</button>
+                </div>
+                <div class="product" data-id="4" >
+                    <img src="image/石墨烯.jpg" alt="石墨烯电池">
+                    <h2>石墨烯电池</h2>
+                    <button onclick="addPoints('48V20AH锂电池', '回收')">回收</button>
+                    <button onclick="addPoints('48V20AH锂电池', '出售')">出售</button>
+                </div>
+                <div class="product" data-id="5" >
+                    <img src="image/天能.avif" alt="天能">
+                    <h2>天能T3石墨烯电池</h2>
+                    <button onclick="addPoints('48V20AH锂电池', '回收')">回收</button>
+                    <button onclick="addPoints('48V20AH锂电池', '出售')">出售</button>
+                </div>
+                <div class="product" data-id="6" >
+                    <img src="image/12.jpg" alt="锂电池组12V300AH">
+                    <h2>锂电池组12V300AH</h2>
+                    <button onclick="addPoints('48V20AH锂电池', '回收')">回收</button>
+                    <button onclick="addPoints('48V20AH锂电池', '出售')">出售</button>
+                </div>
+                <div class="product" data-id="7" >
+                    <img src="image/3.2.jpg" alt="锂电池">
+                    <h2>3.2V120AH磷酸铁锂电池</h2>
+                    <button onclick="addPoints('48V20AH锂电池', '回收')">回收</button>
+                    <button onclick="addPoints('48V20AH锂电池', '出售')">出售</button>
+                </div>
+                <div class="product" data-id="8" >
+                    <img src="image/风帆.jpg" alt="锂电池">
+                    <h2>风范蓄电池</h2>
+                    <button onclick="addPoints('48V20AH锂电池', '回收')">回收</button>
+                    <button onclick="addPoints('48V20AH锂电池', '出售')">出售</button>
+                </div>
+</main>
+<div class="footer">
+    <div class="wrap">
+        <div class="footer-service">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="iconfont">&#xe629;</i>
+                        <span>平台介绍</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont">&#xe629;</i>
+                        <span>关于我们</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont">&#xe629;</i>
+                        <span>联系我们</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont">&#xe629;</i>
+                        <span>隐私政策</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont">&#xe629;</i>
+                        <span>服务协议</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div>
+                <p class="title1">说明</p>
+                <ul>|</ul>
+                <p class="font1">1.仅针对电动车使用者</p>
+                <p class="font1">2.出售废旧电池者，购买经过回收利用电池的消费者，需实名认证，遵守平台交易规定</p>
+                <p class="font1">3.平台经技术检查，筛选后，再将合格电池上架出售，不合格者，降解后用于开发新材料</p>
+                <p class="font1">4.支持7天无理由退货，一年内可返厂保修</p>
+        <div class="footer-aside">
+            <p class="tel">400-100-5678</p>
+            <p class="time">8:00-18:00（仅收市话费）</p>
+            <a href="#" class="kefu">人工客服</a>
+            <div class="follow">
+                关注我们:
+                <img src="./images/wb.png" alt="">
+                <img src="./images/wx.png" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
