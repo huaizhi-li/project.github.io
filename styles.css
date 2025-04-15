@@ -1,0 +1,516 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, legend, input, textarea, button, p, blockquote, th, td
+{margin: 0;padding: 0;}
+body{background: #f1f1f1; text-align: center;font-family: Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;}
+li{ list-style: none;}
+a{text-decoration: none;}
+img{border: none;}
+
+a {
+    text-decoration: none;  /* 移除链接下划线 */
+    color: inherit;         /* 让链接的文字颜色继承父元素的颜色 */ 
+}
+body {
+    font-family: Arial, sans-serif;
+}
+.headcontainer{
+    background-color: black;
+    display: flex; 
+    margin-bottom: 20px;
+}
+footer{
+    background-image: url('../images/a.png'); /* 请替换为你实际的图片路径 */
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.container {
+    width: 100%;
+    gap:10px;
+    display: flex; 
+    text-align: left;  /* 使容器中的所有内容左对齐 */
+}
+.container2{
+    width: 100%;
+    background-color:rgb(245, 245, 245);
+}
+.container3 {
+    width: 100%;
+    gap:10px;
+    display: flex; 
+    text-align: left;  /* 使容器中的所有内容左对齐 */
+}
+.container4{
+    width: 100%;
+    background-color:rgb(245, 245, 245);
+}
+.leftimage{
+    margin-left: 250px;  
+}
+.a p{
+    color:white
+}
+.b p{
+    color:white;
+}
+.a{
+    display: flex; 
+    margin-left: 250px;  
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.b{
+    display: flex; 
+    margin-left: 100px; 
+    margin-bottom: 10px;
+    margin-top: 10px; 
+}
+.top{
+    display: inline-block;  /* 让它们在同一行显示 */
+    margin-right: 50px;  /* 元素之间的间距 */
+    vertical-align: middle;  /* 使图片和文字的中心对齐 */
+    line-height: 50px;  /* 使文字垂直居中 */
+}
+.top2{
+    margin-left: 250px;  
+    color: black;
+    text-align: left;
+    display: flex; 
+}
+.top3{
+    display: inline-block;  /* 让它们在同一行显示 */
+    margin-left: 250px;  
+    margin-right: 10px;  /* 元素之间的间距 */
+    vertical-align: middle; 
+    color: black;
+}
+
+.search-bar {
+    display: flex; /* 使用 Flexbox 布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+     /* 去掉元素间的默认间隙 */
+}
+.sort{
+    margin-left: 250px;
+}
+.search-bar input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    width: 200px;
+    height: 30px;
+    margin-right:0; /* 去掉右侧的间隙 */
+    border-radius: 0; /* 去除圆角，确保边框对齐 */
+}
+
+.search-bar button {
+    display: inline-block;
+    padding: 0; /* 去除内边距 */
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background-image: url('../images/下载 (1).png');
+    background-position: center; /* 图片居中 */
+    background-size: cover;
+    width: 50px;
+    height: 40px; /* 高度与输入框一致 */
+}
+
+.search-bar button:hover {
+    background-color: orangered;
+    border-color: orangered; 
+}
+.search-bar button:active {
+    background-color: orangered; /* 鼠标点击时背景颜色 */
+    border-color: orangered;      /* 点击时边框颜色 */
+}
+.a button{
+    border:none;
+    background-color: black;
+    color:white
+}
+.a button:hover {
+    color: orangered;
+}
+.b button{
+    border:none;
+    background-color: black;
+    color:white
+}
+.b button:hover {
+    color: orangered;
+}
+.top button {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border:none;
+}
+.top button:hover {
+    background-color: orangered;
+}
+.top2 button{
+    border:none;
+    background-color:rgb(245, 245, 245);
+}
+.top2 button:hover {
+    color: orangered;
+}
+.top3 button {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+    border:none;
+}
+.top3 button:hover {
+    background-color: orangered;
+}
+.sort button{
+    border:none;
+    background-color:rgb(245, 245, 245);
+}
+#product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product {
+    width: 18%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+}
+.product img {
+    width: 150px; /* 设置图片的宽度 */
+    height: 150px; /* 设置图片的高度 */
+    object-fit: cover; /* 保持图片内容适当裁剪，填充指定尺寸 */
+    border-radius: 10px; /* 可选：让图片的边角圆滑 */
+    margin-bottom: 10px;
+}
+.product button {
+    color:white;
+    background-color: red;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+.category-label{
+    margin-left: 400px;
+    font-size: 45px;
+}
+
+/* 页脚模块 start */
+.footer-service{
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    padding: 27px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+.footer-service li{
+    float: left;
+    width: 20%;
+    border-right: 1px solid #b0b0b0;
+    box-sizing: border-box;
+}
+.footer-service li:last-child{
+    border-right: 0;
+}
+.footer-service i{
+    font-size: 24px;
+    margin-right: 6px;
+}
+.footer-service a{
+    color: #616161;
+}
+.footer-service a:hover{
+    color: #ff6700;
+}
+.footer-link{
+    width: 100%;
+    height: 172px;
+    padding: 40px 0;
+}
+.footer-link ul{
+    float: left;
+    width: 160px;
+    text-align: left;
+    color: #424242;
+    font-size: 14px;
+    line-height: 1.25;
+}
+.footer-link ul a{
+    font-size: 12px;
+    color: #757575;
+}
+.footer-link ul li{
+    margin-top: 10px;
+}
+.footer-aside{
+    width: 250px;
+    height: 111px;
+    border-left: 1px solid #e0e0e0;
+    float: right;
+    color: #616161;
+}
+
+.footer-aside .tel{
+    font-size: 22px;
+    line-height: 22px;
+    color: #ff6700;
+    margin-bottom: 5px;
+}
+.footer-aside .time{
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.kefu{
+    display: block;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #ff6700;
+    box-sizing: border-box;
+    margin: 0 auto;
+    color: #ff6700;
+    font-size: 12px;
+    transition: all 0.4s;
+}
+.kefu:hover{
+    background: #ff6700;
+    border-color: #ff6700;
+    color: #fff;
+}
+
+.follow{
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.follow img{
+    width: 24px;
+    margin-left: 6px;
+    position: relative;
+    top: 7px;
+}
+
+/* 页脚模块 end */
+a {
+    text-decoration: none;  /* 移除链接下划线 */
+    color: inherit;         /* 让链接的文字颜色继承父元素的颜色 */ 
+}
+body {
+    font-family: Arial, sans-serif;
+}
+.headcontainer{
+    background-color: black;
+    display: flex; 
+    margin-bottom: 20px;
+}
+footer{
+    background-image: url('../images/a.png'); /* 请替换为你实际的图片路径 */
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.container {
+    width: 100%;
+    gap:10px;
+    display: flex; 
+    text-align: left;  /* 使容器中的所有内容左对齐 */
+}
+.container2{
+    width: 100%;
+    background-color:rgb(245, 245, 245);
+}
+.container3 {
+    width: 100%;
+    gap:10px;
+    display: flex; 
+    text-align: left;  /* 使容器中的所有内容左对齐 */
+}
+.container4{
+    width: 100%;
+    background-color:rgb(245, 245, 245);
+}
+.leftimage{
+    margin-left: 250px;  
+}
+.a p{
+    color:white
+}
+.b p{
+    color:white;
+}
+.a{
+    display: flex; 
+    margin-left: 250px;  
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.b{
+    display: flex; 
+    margin-left: 100px; 
+    margin-bottom: 10px;
+    margin-top: 10px; 
+}
+.top{
+    display: inline-block;  /* 让它们在同一行显示 */
+    margin-right: 50px;  /* 元素之间的间距 */
+    vertical-align: middle;  /* 使图片和文字的中心对齐 */
+    line-height: 50px;  /* 使文字垂直居中 */
+}
+.top2{
+    margin-left: 250px;  
+    color: black;
+    text-align: left;
+    display: flex; 
+}
+.top3{
+    display: inline-block;  /* 让它们在同一行显示 */
+    margin-left: 250px;  
+    margin-right: 10px;  /* 元素之间的间距 */
+    vertical-align: middle; 
+    color: black;
+}
+
+.search-bar {
+    display: flex; /* 使用 Flexbox 布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+     /* 去掉元素间的默认间隙 */
+}
+.sort{
+    margin-left: 250px;
+}
+.search-bar input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    width: 200px;
+    height: 30px;
+    margin-right:0; /* 去掉右侧的间隙 */
+    border-radius: 0; /* 去除圆角，确保边框对齐 */
+}
+
+.search-bar button {
+    display: inline-block;
+    padding: 0; /* 去除内边距 */
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background-image: url('../images/下载 (1).png');
+    background-position: center; /* 图片居中 */
+    background-size: cover;
+    width: 50px;
+    height: 40px; /* 高度与输入框一致 */
+}
+
+.search-bar button:hover {
+    background-color: orangered;
+    border-color: orangered; 
+}
+.search-bar button:active {
+    background-color: orangered; /* 鼠标点击时背景颜色 */
+    border-color: orangered;      /* 点击时边框颜色 */
+}
+.a button{
+    border:none;
+    background-color: black;
+    color:white
+}
+.a button:hover {
+    color: orangered;
+}
+.b button{
+    border:none;
+    background-color: black;
+    color:white
+}
+.b button:hover {
+    color: orangered;
+}
+.top button {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border:none;
+}
+.top button:hover {
+    background-color: orangered;
+}
+.top2 button{
+    border:none;
+    background-color:rgb(245, 245, 245);
+}
+.top2 button:hover {
+    color: orangered;
+}
+.top3 button {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+    border:none;
+}
+.top3 button:hover {
+    background-color: orangered;
+}
+.sort button{
+    border:none;
+    background-color:rgb(245, 245, 245);
+}
+#product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product {
+    width: 18%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+}
+.product img {
+    width: 150px; /* 设置图片的宽度 */
+    height: 150px; /* 设置图片的高度 */
+    object-fit: cover; /* 保持图片内容适当裁剪，填充指定尺寸 */
+    border-radius: 10px; /* 可选：让图片的边角圆滑 */
+    margin-bottom: 10px;
+}
+.product button {
+    color:white;
+    background-color: red;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+.category-label{
+    margin-left: 400px;
+    font-size: 45px;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, legend, input, textarea, button, p, blockquote, th, td
+{margin: 0;padding: 0;}
+body{background: #f1f1f1; text-align: center;font-family: Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;}
+li{ list-style: none;}
+a{text-decoration: none;}
+img{border: none;}
